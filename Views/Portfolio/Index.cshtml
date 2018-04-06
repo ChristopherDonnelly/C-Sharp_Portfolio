@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <script src="~/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="/">Christopher Donnelly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        @{
+            string title = "About Me";
+            <h1 class="pl-3 pr-3 pt-3">@title</h1>
+        }
+        <div class="row pl-2 pr-2">
+            <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12 pt-4 text-center">
+                <img src="~/images/Chris.jpg" alt="Profile Picture" class="col col-xl-12 col-lg-12 col-md-12 col-sm-8 p-0">
+            </div>
+            <div class="col-xl-7 col-lg-8 col-md-6 col-sm-12 pt-3">
+                <p>Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I am the man with no name, Zapp Brannigan! Switzerland is small and neutral! We are more like Germany, ambitious and misunderstood!</p>
+
+                <p>Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head." Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?</p>
+
+                <p>Bender, hurry! This fuel's expensive! Also, we're dying! It's toe-tappingly tragic! Guards! Bring me the forms I need to fill out to have her taken away! In your time, yes, but nowadays shut up! Besides, these are adult stemcells, harvested from perfectly healthy adults whom I killed for their stemcells.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="~/js/bootstrap.min.js" ></script>
+</body>
+</html>
